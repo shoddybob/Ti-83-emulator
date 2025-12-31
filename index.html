@@ -1,0 +1,77 @@
+ 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Émulateur TI-83</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="screen">
+                <div class="screen-history" id="history"></div>
+                <div class="screen-display" id="display">0</div>
+            </div>
+            
+            <div class="keyboard">
+                <!-- Row 1 -->
+                <button class="key key-func" data-key="2nd">2nd</button>
+                <button class="key key-func" data-key="mode">MODE</button>
+                <button class="key key-func" data-key="del">DEL</button>
+                <button class="key key-func" data-key="alpha">ALPHA</button>
+                
+                <!-- Row 2 -->
+                <button class="key key-func" data-key="x²">x²</button>
+                <button class="key key-func" data-key="⁻¹">⁻¹</button>
+                <button class="key key-func" data-key="math">MATH</button>
+                <button class="key key-func" data-key="apps">APPS</button>
+                
+                <!-- Row 3 -->
+                <button class="key key-func" data-key="sin">SIN</button>
+                <button class="key key-func" data-key="cos">COS</button>
+                <button class="key key-func" data-key="tan">TAN</button>
+                <button class="key key-func" data-key="^">^</button>
+                
+                <!-- Row 4 -->
+                <button class="key key-func" data-key="log">LOG</button>
+                <button class="key key-func" data-key="ln">LN</button>
+                <button class="key key-func" data-key="sto">STO</button>
+                <button class="key key-func" data-key="on">ON</button>
+                
+                <!-- Row 5 -->
+                <button class="key" data-key="7">7</button>
+                <button class="key" data-key="8">8</button>
+                <button class="key" data-key="9">9</button>
+                <button class="key key-op" data-key="/">/</button>
+                
+                <!-- Row 6 -->
+                <button class="key" data-key="4">4</button>
+                <button class="key" data-key="5">5</button>
+                <button class="key" data-key="6">6</button>
+                <button class="key key-op" data-key="*">×</button>
+                
+                <!-- Row 7 -->
+                <button class="key" data-key="1">1</button>
+                <button class="key" data-key="2">2</button>
+                <button class="key" data-key="3">3</button>
+                <button class="key key-op" data-key="-">−</button>
+                
+                <!-- Row 8 -->
+                <button class="key" data-key="0">0</button>
+                <button class="key" data-key=".">.</button>
+                <button class="key key-neg" data-key="(−)">(−)</button>
+                <button class="key key-op" data-key="+">+</button>
+                
+                <!-- Row 9 -->
+                <button class="key key-func" data-key="(">(</button>
+                <button class="key key-func" data-key=")">)</button>
+                <button class="key key-func" data-key="clear">CLEAR</button>
+                <button class="key key-enter" data-key="enter">ENTER</button>
+            </div>
+        </div>
+    </div>
+    <script src="ti83.js"></script>
+</body>
+</html>
